@@ -82,4 +82,16 @@ O Stash é um armazenamento temporário para modificações que ainda não podem
 **git stash list** - Lista os stashes criados   
 **git stash apply** - Volta ao último stash  
 **git stash apply stash@{2}** - Volta ao stash com índice 2   
-**git stash branch meu_branch** - Criar um branch a partir de um stash   
+**git stash branch meu_branch** - Criar um branch a partir de um stash 
+
+### Adicionar SSH
+Adicionar nova chave SSH, executar comando e fazer o solicitado
+Preferencia criar em  /Users/you/.ssh/nome_da_chave)
+***ssh-keygen -t ed25519 -C "your_email@example.com"***
+
+É possível que você tenha de usar o acesso raiz executando sudo -s -H antes de iniciar o ssh-agent, ou você pode ter de usar exec ssh-agent bash ou exec ssh-agent zsh para executar o ssh-agent.
+
+**eval "$(ssh-agent -s)" **
+**ssh-add ../iwnfy/fred_id_rsa** - Sem o pub
+
+a chave ssh deve estar aqui: https://github.com/settings/keys
